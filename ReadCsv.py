@@ -17,7 +17,7 @@ with open('test.csv') as csvfile:
 for e in englishes:
   tempKey = ''
   for letter in e:
-    if re.match(r'\b[^\d\W]+\b', letter):
+    if re.match(r'^[a-zA-Z0-9_.-]*$', letter):
       tempKey += letter
     else:
       tempKey += '_'
