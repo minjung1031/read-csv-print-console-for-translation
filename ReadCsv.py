@@ -7,6 +7,7 @@ englishes = []
 frenches = []
 newFrenches = []
 
+
 # read csv file
 with open('test.csv') as csvfile:
   spamreader = csv.reader(csvfile, delimiter=';')
